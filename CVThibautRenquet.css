@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1
+{
+    background-color: #1a3d6e;
+    font-size: 25px;
+    text-align: center;
+    color: gray;
+    font-family: 'roboto', sans-serif;
+    text-shadow: black 5px 10px 3px;
+}
+.h1class
+{
+    padding-bottom: 1%;
+    font-size: 40px;
+    padding-top: 1%;
+}
+header
+{
+    overflow: hidden;
+    background-color: #1a3d6e;
+}
+body
+{
+    background-color: #fafafa;
+}
+nav
+{
+    background-color: #4c7a9e;
+    box-sizing: border-box;
+    border: 3px solid black;
+    display: flex;
+    padding-top: 1%;
+    justify-content: center;
+}
+.navtekst
+{
+    font-size: 30px;
+    color: yellow;
+}
+#vaardigheden
+{
+    flex: 1;
+    text-align: left;
+}
+#overmij
+{
+    flex: 1;
+    text-align: center;
+}
+#werkervaring
+{
+    flex: 1;
+    text-align: right;
+}
+.ThibautFoto
+{
+
+}
+.ThibautFoto:hover
+{
+    box-shadow: 5px 5px 10px 3px;
+}
+.ThibautFoto:active
+{
+    box-shadow: none;
+    border: 3px solid yellow;
+}
+main
+{
+    background-color: #dceaf2;
+}
+#mijnfoto
+{
+    display: flex;
+}
+.downNavDiv
+{
+    padding: 10px;
+    display: flex;
+    height: 200px;
+    text-align: center;
+    color: white;
+}
+.downNavSection
+{
+    background-color: #1a3d6e;
+    border: 3px solid black;
+    margin: 20px;
+    width: 100%;
+}
+h2
+{
+    text-align: center;
+    padding: 10px;
+}
+table {
+    padding: 5%;
+    border-collapse: collapse;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+th, td {
+    border: 1px solid #ddd;
+}
+table tr:first-of-type {
+    background-color: #1a3d6e;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+footer
+{
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+}
+.footerlinks
+{
+    flex: 1;
+    text-align: left;
+}
+.footermidden
+{
+    flex: 1;
+    text-align: center;
+    margin-right: 24%;
+}
+.footerright
+{
+    flex: 1;
+    text-align: right;
+}
+@keyframes h1
+{
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0%); }
+}
+@keyframes h2
+{
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0%); }
+}
+#eersteH1
+{
+animation: h1 5s infinite;
+}
+#tweedeH1
+{
+    animation: h2 5s infinite;
+}
+@keyframes OvermijAnimatie1
+{
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0%); }
+}
+#mijninformatie
+{
+    text-align: center;
+}
+.fadeout
+{
+    transition: opacity 1s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.fadeout.show
+{
+    opacity: 1;
+    visibility: visible;
+}
+#p1
+{
+    box-sizing: border-box;
+    border: 3px dotted #1a3d6e;
+}
+#OptieID
+{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-size: 18px;
+}
+.Buttons
+{
+    padding-bottom: 5%;
+}
+#Talen, #SoftSkills, #HardSkills
+{
+    cursor: pointer;
+}
+#extratekstTalen, #extratekstHardSkills, #extratekstSoftSkills
+{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+.show
+{
+    visibility: visible;
+    opacity: 1;
+}
+.selection-container
+{
+    display: flex;
+    justify-content: center;
+}
+#mijnwerkervaring
+{
+    text-align: center;
+}
+.sectionWerkervaring
+{
+    box-sizing: border-box;
+    border: 3px solid black;
+    padding: 30px;
+}
