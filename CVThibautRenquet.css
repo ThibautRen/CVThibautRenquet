@@ -6,10 +6,8 @@
 h1
 {
     background-color: #1a3d6e;
-    font-size: 25px;
     text-align: center;
     color: gray;
-    font-family: 'roboto', sans-serif;
     text-shadow: black 5px 10px 3px;
 }
 .h1class
@@ -26,11 +24,12 @@ header
 body
 {
     background-color: #fafafa;
+    font-size: 1rem;
+    overflow-x: hidden;
 }
 nav
 {
     background-color: #4c7a9e;
-    box-sizing: border-box;
     border: 3px solid black;
     display: flex;
     padding-top: 1%;
@@ -39,7 +38,7 @@ nav
 .navtekst
 {
     font-size: 30px;
-    color: yellow;
+    color: black;
 }
 #vaardigheden
 {
@@ -58,7 +57,9 @@ nav
 }
 .ThibautFoto
 {
-
+    display: inline-block;
+    max-width: 20%;
+    max-height: 20%;
 }
 .ThibautFoto:hover
 {
@@ -75,15 +76,15 @@ main
 }
 #mijnfoto
 {
-    display: flex;
+    text-align: center;
+    display:inline-block;
 }
 .downNavDiv
 {
     padding: 10px;
-    display: flex;
-    height: 200px;
     text-align: center;
     color: white;
+    flex-wrap: wrap;
 }
 .downNavSection
 {
@@ -100,9 +101,10 @@ h2
 table {
     padding: 5%;
     border-collapse: collapse;
-    width: 300px;
+    width: 100%;
     text-align: center;
     margin: auto;
+    overflow-wrap: break-word;
 }
 th, td {
     border: 1px solid #ddd;
@@ -198,9 +200,12 @@ animation: h1 5s infinite;
 }
 #extratekstTalen, #extratekstHardSkills, #extratekstSoftSkills
 {
+    display: inline-block;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s ease, visibility 1s ease;
+    width: 100%;
+    text-align: center;
 }
 .show
 {
@@ -211,6 +216,7 @@ animation: h1 5s infinite;
 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 #mijnwerkervaring
 {
@@ -221,4 +227,41 @@ animation: h1 5s infinite;
     box-sizing: border-box;
     border: 3px solid black;
     padding: 30px;
+}
+@media (max-width: 480px)
+{
+    nav
+    {
+        flex-direction: column;
+    }
+    table
+    {
+        width: 100%;
+    }
+    th
+    {
+        display: block;
+    }
+
+    td
+    {
+        display: block;
+    }
+    body
+    {
+        font-size: 0.9rem;
+    }
+    .DownNavDiv
+    {
+        flex-direction: column;
+    }
+    .downNavSection
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+    #extratekstTalen, #extratekstHardSkills, #extratekstSoftSkills
+    {
+        display: block;
+    }
 }
